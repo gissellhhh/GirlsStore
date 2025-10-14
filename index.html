@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GIRLS STORE — Boutique de Moda Femenina</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="Boutique.css">
+
+  <meta name="description" content="GIRLS STORE — boutique femenina con lo mejor en moda y estilo.">
+</head>
+<body>
+
+  <!--HEADER logo a la izquierda y texto-->
+  <header class="header">
+    <div class="container header-row d-flex align-items-center"> <!--contenedor del logo imagen a la izquierda y texto a la derecha-->
+      <div class="d-flex align-items-center me-3 logo-wrap">
+        <img src="logo.jpg" alt="Logo GIRLS STORE" class="logo-img">
+        <div class="logo-text ms-2">
+          <div class="logo">GIRLS STORE</div>
+        </div>
+      </div>
+      
+      <!--navegación principal-->
+      <nav class="nav-main" aria-label="Main navigation">
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="#products" class="nav-link">Tienda</a>
+        <a href="#categories-title" class="nav-link">Colecciones</a>
+        <a href="#featured" class="nav-link">Más Vendidos</a>
+        <a href="#contact-info" class="nav-link">Contacto</a>
+      </nav>
+
+      <!--acciones del header-->
+      <div class="header-actions ms-3 d-flex align-items-center">
+        <button class="icon-btn" aria-label="search">🔍</button>
+        <button class="icon-btn" aria-label="account">👤</button>
+        <button class="cart-btn" aria-label="cart">🛒<span class="cart-count">0</span></button>
+      </div>
+    </div>
+  </header>
+
+
+  <!--logo y nombre principal-->
+   <div class="hero-area-wrapper">
+  <section class="hero"></section>
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <h1>GIRLS STORE</h1>
+      <h1><p class="lead">Descubre tu estilo único.</p></h1>
+    </div>
+    <div class="hero-image" role="img" aria-label="Hero product collage">
+      <img src="logo.jpg" alt="romand hero">
+    </div>
+  </div>
+</div>
+ 
+
+<section class="mision-vision text-center py-5">
+  <div id="misionVisionCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <!--VISIÓN-->
+      <div class="carousel-item active">
+        <div class="p-5 rounded shadow vision-card">
+          <h2 class="fw-bold mb-3">Nuestra Visión</h2>
+          <p class="lead">
+          Ser la boutique favorita en moda coquette y sinónimo de estilo y feminidad🎀.
+          </p>
+        </div>
+      </div>
+
+      <!--MISIÓN-->
+      <div class="carousel-item">
+        <div class="p-5 rounded shadow mission-card">
+          <h2 class="fw-bold mb-3">Nuestra Misión</h2>
+          <p class="lead">
+            Ofrecer vestidos coquette que resalten la belleza y elegancia de cada mujer🎀.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Controles-->
+    <button class="carousel-control-prev" type="button" data-bs-target="#misionVisionCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#misionVisionCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+  <!--CATEGORÍAS-->
+  <section class="categories container" aria-labelledby="categories-title">
+    <h2 id="categories-title">Colecciones</h2>
+    <div class="cats-grid">
+      <a href="#" class="cat">
+        <img src="vestido16.jpeg" alt="Casual">
+        <span class="cat-label">Casual</span>
+      </a>
+      <a href="#" class="cat">
+        <img src="vestido8.jpeg" alt="Moda rosa">
+        <span class="cat-label">Vestidos</span>
+      </a>
+      <a href="#" class="cat">
+        <img src="accesorios.jpeg" alt="Accessorios">
+        <span class="cat-label">Accesorios</span>
+      </a>
+      <a href="#" class="cat">
+        <img src="portada2.jpg" alt="Nuvos modelos">
+        <span class="cat-label">Nuevos Modelos</span>
+      </a>
+    </div>
+  </section>
+
+  <!--DESTACADOS-->
+  <section id="featured" class="featured container">
+    <h2>Más Vendidos</h2>
+    <div class="featured-grid">
+      <article class="featured-card">
+        <img src="vestido27.jpg" alt="Vestido Floral">
+        <div class="featured-body">
+          <h3>Vestido Floral de Verano</h3>
+          <p class="muted">Ligero, fresco y perfecto para cualquier ocasión.</p>
+          <p class="price">$20.00</p>
+          <div class="meta">
+            <span>⭐ 4.9</span> <span class="muted">· 1.2k vendidos</span>
+           <div class="actions">
+            <button class="btn">Agregar al carrito</button>
+             <a href="#modal1" class="ver">Ver producto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card">
+        <img src="vestido18.jpg" alt="Vestido satinado">
+        <div class="featured-body">
+          <h3>Vestido Satinado Elegante</h3>
+          <p class="muted">Un toque más elegante con tela satinada.</p>
+          <p class="price">$30.00</p>
+          <div class="meta">
+            <span>⭐ 4.8</span> <span class="muted">· 980 vendidos</span>
+          </div>
+          <div class="actions">
+            <button class="btn">Agregar al carrito</button>
+             <a href="#modal2" class="ver">Ver producto</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="featured-card">
+        <img src="vestido26.jpeg" alt="Lazo de seda">
+        <div class="featured-body">
+          <h3>vestido de terciopelo</h3>
+          <p class="muted">Añade un toque vintage y chic a tu colección.</p>
+          <p class="price">$17.00</p>
+          <div class="meta">
+            <span>⭐ 4.7</span> <span class="muted">· 870 vendidos</span>
+          </div>
+          <div class="actions">
+            <button class="btn">Agregar al carrito</button>
+            <a href="#modal3" class="ver">Ver producto</a>
+          </div>
+        </div>
+      </article>
+
+<div id="modal1" class="modal">
+  <a href="#featured" class="cerrar">&times;</a>
+  <img src="vestido27.jpg" alt="Vestido Satinado grande">
+    </div>
+  </section>
+
+<div id="modal2" class="modal">
+  <a href="#featured" class="cerrar">&times;</a>
+  <img src="vestido18.jpg" alt="Vestido Satinado grande">
+    </div>
+  </section>
+
+  <div id="modal3" class="modal">
+  <a href="#featured" class="cerrar">&times;</a>
+  <img src="vestido26.jpeg" alt="Vestido Satinado grande">
+    </div>
+  </section>
+
+  <!--TODOS LOS PRODUCTOS-->
+  <section id="products" class="products container">
+    <h2>Todos los Productos</h2>
+    <p class="muted subhead">Explora nuestra colección completa de vestidos de ensueño.</p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="vestido15.jpeg" alt="Suspiro de algodón ">
+        <h3>Suspiro de algodón</h3>
+        <p class="price">$18.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido14.jpeg" alt="Flor de Cerezo">
+        <h3>Flor de Cerezo</h3>
+        <p class="price">$14.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido12.jpeg" alt="Rocío Matinal">
+        <h3>Rocío Matinal</h3>
+        <p class="price">$25.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido7.jpeg" alt="Dulce Melodía">
+        <h3>Dulce Melodía</h3>
+        <p class="price">$35.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+    </div>
+
+  <div class="product-card">
+        <img src="vestido10.jpeg" alt="Jardín Secreto">
+        <h3>Jardín Secreto</h3>
+        <p class="price">$20.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+    </div>
+
+  <div class="product-card">
+        <img src="vestido19.jpeg" alt="Jardín Secreto">
+        <h3>Jardín Secreto</h3>
+        <p class="price">$19.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+  <div class="product-card">
+        <img src="vestido20.jpeg" alt="Brisa de mayo">
+        <h3>"Brisa de mayo</h3>
+        <p class="price">$20.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+  <div class="product-card">
+        <img src="vestido5.jpeg" alt="Cupcake de Fresa">
+        <h3>Cupcake de Fresa</h3>
+        <p class="price">$17.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido3.jpeg" alt="Capricho Romántico">
+        <h3>Capricho Romántico</h3>
+        <p class="price">$30.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido2.jpeg" alt="Sueño de Tul">
+        <h3>Sueño de Tul</h3>
+        <p class="price">$40.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido21.jpeg" alt="Babby Doll de encaje">
+        <h3>Babby Doll de encaje</h3>
+        <p class="price">$16.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="vestido22.jpeg" alt="Corte A de rosas">
+        <h3>Corte A de rosas</h3>
+        <p class="price">$32.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido23.jpeg" alt="Mini volante Romántico">
+        <h3>"Mini volante Romántico</h3>
+        <p class="price">$19.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="vestido24.jpeg" alt="Vestido Tutú de algodón">
+        <h3>Vestido Tutú de algodón</h3>
+        <p class="price">$12.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+
+       <div class="product-card">
+        <img src="vestido25.jpeg" alt="Malla de Perlas">
+        <h3>Malla de Perlas</h3>
+        <p class="price">$30.00</p>
+        <div class="card-actions">
+          <button class="btn small">Agregar</button>
+          <a class="link-small" href="#">Vista rápida</a>
+        </div>
+      </div>
+      </section>
+
+
+
+  <!--TESTIMONIOS-->
+  <section class="testimonials container" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title">Lo que dicen nuestras clientas</h2>
+    <div class="testi-grid">
+      <blockquote class="testi">
+        <p>"La ropa es preciosa y la calidad excelente 💕"</p>
+        <cite>— Belén B.</cite>
+      </blockquote>
+
+      <blockquote class="testi">
+        <p>"Me encantan sus vestidos, quedan perfectos."</p>
+        <cite>— Marcela G.</cite>
+      </blockquote>
+
+      <blockquote class="testi">
+        <p>"Envío rápido y atención super amable. Recomendado 100%!"</p>
+        <cite>— Reilly B.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+<!--VIDEOS LOOCKBOOK-->
+<section class="lookbook">
+  <center><h2>LOOKBOOK</h2></center>
+    <div class="videos-en-fila">
+  <video src="video1.mp4"autoplay muted loop></video>
+  <video src="video2.mp4"autoplay muted loop></video>
+  <video src="video3.mp4"autoplay muted loop></video>
+  <video src="video4.mp4"autoplay muted loop></video>
+  <video src="video5.mp4"autoplay muted loop></video>
+</div>
+</section>
+
+<!--ACORDEON-->
+    <div class="acordeon-contenedor">
+
+        <details class="acordeon-item">
+            <summary class="acordeon-titulo">¿Cuáles son los métodos de pago?</summary>
+            <div class="acordeon-contenido">
+                <p> Aceptamos Tarjeta (Crédito/Débito), PayPal y Transferencia bancaria.</p>
+            </div>
+        </details>
+
+        <details class="acordeon-item">
+            <summary class="acordeon-titulo">¿Cuánto tarda en llegar mi pedido?</summary>
+            <div class="acordeon-contenido">
+                <p> El proceso de empaque toma 1-2 días hábiles, más un tiempo de envío de 3-5 días hábiles a nivel nacional.</p>
+            </div>
+        </details>
+
+        <details class="acordeon-item">
+            <summary class="acordeon-titulo">¿Hacen cambios o devoluciones?</summary>
+            <div class="acordeon-contenido">
+                <p>Sí. Tienes 7 días para solicitar un cambio o devolución. El vestido debe estar sin usar y con etiquetas.</p>
+            </div>
+        </details>
+    </div>
+
+
+  <!--DESCUENTO-->
+  <section class="newsletter container">
+    <div class="newsletter-inner">
+      <h2>Únete a nuestro newsletter</h2>
+      <p class="muted">Obtén un 10% de descuento en tu primera compra y acceso a lanzamientos exclusivos.</p>
+      <form class="newsletter-form" aria-label="Subscribe to newsletter">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button class="btn">Suscribirme</button>
+      </form>
+    </div>
+  </section>
+
+  
+<!--CONTACTO-->
+        <center>
+      <aside class="contact-info" aria-label="Contact information">
+        <h3>Información de contacto</h3>
+        <p>Teléfono: <a href="tel:+50500000000">+505 8173-2257</a></p>
+        <p>Email: <a href="mailto:info@girlsstore.com">girlsstore.ni@gmail.com</a></p>
+        <p>Dirección: Calle Central #123, Barrio El centro, Chichigalpa, Chinandega, Nicaragua</p>
+
+        <div class="store-hours">
+          <h4>Horario</h4>
+          <p>Lunes — Viernes: 9:00 — 18:00</p>
+          <p>Sábado: 10:00 — 15:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="link">Instagram</a>
+          <a href="#" class="link">Facebook</a>
+          <a href="#" class="link">TikTok</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+  </center>
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">GIRLS STORE</div>
+        <p class="muted">Tu boutique femenina de confianza. Moda moderna, calidad y estilo.</p>
+        <div class="payment-icons">
+          <span>💳</span> <span>PayPal</span> <span>Apple Pay</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Tienda</h4>
+        <ul class="footer-list">
+          <li><a href="#">Todos los Productos</a></li>
+          <li><a href="#">Más Vendidos</a></li>
+          <li><a href="#">Colecciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <ul class="footer-list">
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Devoluciones</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Suscríbete</h4>
+        <form class="footer-subscribe">
+          <input type="email" placeholder="Correo electrónico">
+          <button class="btn">Suscribirme</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container smallprint">
+      <p class="copy">&copy; 2025 GIRLS STORE — Todos los derechos reservados.</p>
+      <p class="muted">Diseño adaptado exclusivamente para boutique de moda femenina.</p>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP 5.3 JS (CDN) - Popper incluido -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+</body>
+</html>
