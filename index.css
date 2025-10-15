@@ -446,30 +446,44 @@ body {
   font-weight: bold;
 }
 
-/* Ajustes para móviles */
-@media (max-width: 768px) {
-  body {
-    background-color: #f8f0f8; /* color pastel suave */
-    padding: 0 10px;
-  }
+/*AJUSTES PARA MÓVILES*/
+@media screen and (max-width: 768px) {
+  /* Hero */
+  .hero, .hero-inner { flex-direction: column; gap: 1.5rem; text-align: center; }
+  .hero-text { max-width: 100%; }
+  .hero-text h1 { font-size: 2rem; }
+  .hero-text .lead { font-size: 1rem; }
+  .hero-image { width: 80%; max-width: 300px; }
 
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
+  /* Header */
+  .header-row { flex-direction: column; gap: 0.6rem; text-align: center; }
+  .nav-main { flex-direction: column; margin-left: 0; gap: 0.5rem; }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+  /* Misión y Visión */
+  .mision-vision { flex-direction: column; min-height: auto; padding: 10px; }
+  .mision-vision .vision-card, .mision-vision .mission-card { width: 100%; height: auto; min-height: auto; }
 
-  header, .hero, .section {
-    text-align: center;
-  }
+  /* Categorías */
+  .cats-grid { grid-template-columns: 1fr !important; }
 
-  h1, h2, h3 {
-    font-size: 1.2rem;
-  }
+  /* Destacados */
+  .featured-grid { grid-template-columns: 1fr !important; }
+
+  /* Productos */
+  .product-grid { grid-template-columns: 1fr !important; }
+  .product-card img { height: auto; }
+
+  /* Videos */
+  .videos-en-fila { flex-direction: column; }
+  .videos-en-fila video { width: 100%; height: auto; }
+
+  /* Newsletter */
+  .newsletter-inner { flex-direction: column; gap: 0.5rem; }
+  .newsletter-form { flex-direction: column; gap: 0.5rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr !important; text-align: center; }
+
+  /* Contacto */
+  .contact-info { width: 95%; margin: 10px auto; }
 }
